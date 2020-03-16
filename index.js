@@ -280,12 +280,17 @@ function tallyUpDonations(runners) {
  * counter() // should return 2
  * etc
  */
+
 function counterMaker() {
-  const count = -1;
+
+  let count = 0;
 
   return function counter() {
-    return ++count;
+
+    return count++;
+
   };
+  
 }
 
 /**
